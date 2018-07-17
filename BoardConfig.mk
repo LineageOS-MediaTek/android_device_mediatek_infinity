@@ -46,6 +46,8 @@ BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_USES_MKE2FS := true # Use MKE2FS for creating ext4 images
 
 # Kernel
+# Hack for building without kernel sources
+$(shell mkdir -p $(OUT)/obj/KERNEL_OBJ/usr)
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/zImage
 #BOARD_KERNEL_IMAGE_NAME := zImage-dtb
 #TARGET_KERNEL_SOURCE := kernel/lemfo/LD_AUO
