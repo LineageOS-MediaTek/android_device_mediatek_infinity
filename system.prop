@@ -26,11 +26,11 @@ ro.config.vc_call_vol_steps=14
 ro.config.media_vol_steps=30
 
 # LCD
-ro.sf.lcd_density=320
+ro.sf.lcd_density=160
 
 # MediaTek
 ro.mediatek.chip_ver=S01
-ro.mediatek.version.release=alps-mp-n1.mp1-V1_lenovo6737m.35.n1_P68
+ro.mediatek.version.release=alps-mp-n0.mp1-V1.0.2_hct6737m.35g.n_P115
 ro.mediatek.version.branch=alps-mp-n1.mp1
 ro.mediatek.platform=MT6737M
 ro.mediatek.version.sdk=4
@@ -113,7 +113,7 @@ service.adb.root=1
 persist.sys.root_access=0
 
 # Rotation
-ro.sf.hwrotation=0
+ro.sf.hwrotation=180
 
 # SELinux
 ro.boot.selinux=disable
