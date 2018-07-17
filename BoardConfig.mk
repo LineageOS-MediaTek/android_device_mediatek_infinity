@@ -70,7 +70,7 @@ BOARD_MKBOOTIMG_ARGS := --kernel_offset $(BOARD_KERNEL_OFFSET) --ramdisk_offset 
 
 # Linker
 LINKER_FORCED_SHIM_LIBS := /system/vendor/bin/thermal|libshim_ifc.so
-LINKER_FORCED_SHIM_LIBS += /system/lib/libmedia.so|libshim_misc.so:/system/lib/libstagefright.so|libshim_misc.so:/system/lib/libandroid_runtime.so|libshim_misc.so
+#LINKER_FORCED_SHIM_LIBS += /system/lib/libmedia.so|libshim_misc.so:/system/lib/libstagefright.so|libshim_misc.so:/system/lib/libandroid_runtime.so|libshim_misc.so
 LINKER_FORCED_SHIM_LIBS += /system/vendor/lib/libui_ext.so|libshim_ui.so:/system/vendor/lib/libcam_utils.so|libshim_ui.so
 LINKER_FORCED_SHIM_LIBS += /system/vendor/lib/libMtkOmxVenc.so|libshim_ui.so
 LINKER_FORCED_SHIM_LIBS += /system/vendor/lib/libgui_ext.so|libshim_gui.so
