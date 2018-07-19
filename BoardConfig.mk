@@ -39,19 +39,10 @@ TARGET_SCREEN_WIDTH := 400
 
 # Filesystem
 TARGET_USERIMAGES_USE_EXT4 := true
-#TARGET_USERIMAGES_USE_F2FS := true
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := ext4
 
-TARGET_USES_MKE2FS := true # Use MKE2FS for creating ext4 images
-
 # Kernel
-# Hack for building without kernel sources
-$(shell mkdir -p $(OUT)/obj/KERNEL_OBJ/usr)
-TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/zImage
-#BOARD_KERNEL_IMAGE_NAME := zImage-dtb
-#TARGET_KERNEL_SOURCE := kernel/lemfo/LD_AUO
-#TARGET_KERNEL_CONFIG := LD_AUO_defconfig
 BOARD_KERNEL_BASE := 0x40000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_RAMDISK_OFFSET := 0x04000000
@@ -70,7 +61,6 @@ BOARD_MKBOOTIMG_ARGS := --kernel_offset $(BOARD_KERNEL_OFFSET) --ramdisk_offset 
 
 # Linker
 LINKER_FORCED_SHIM_LIBS := /system/vendor/bin/thermal|libshim_ifc.so
-#LINKER_FORCED_SHIM_LIBS += /system/lib/libmedia.so|libshim_misc.so:/system/lib/libstagefright.so|libshim_misc.so:/system/lib/libandroid_runtime.so|libshim_misc.so
 LINKER_FORCED_SHIM_LIBS += /system/vendor/lib/libui_ext.so|libshim_ui.so:/system/vendor/lib/libcam_utils.so|libshim_ui.so
 LINKER_FORCED_SHIM_LIBS += /system/vendor/lib/libMtkOmxVenc.so|libshim_ui.so
 LINKER_FORCED_SHIM_LIBS += /system/vendor/lib/libgui_ext.so|libshim_gui.so
@@ -89,4 +79,8 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/fstab.mt6735
 
 # System Properties
-TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+
+# Hack for building without kernel sources
+$(shell mkdir -p $(OUT)/obj/KERNEL_OBJ/usr)
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/zImage
