@@ -61,7 +61,7 @@ BOARD_MKBOOTIMG_ARGS := --kernel_offset $(BOARD_KERNEL_OFFSET) --ramdisk_offset 
 
 # Linker
 LINKER_FORCED_SHIM_LIBS := /system/lib/libnetutils.so|libshim_ifc.so
-LINKER_FORCED_SHIM_LIBS += /system/lib/libui.so|libshim_ui.so
+LINKER_FORCED_SHIM_LIBS += /system/lib/libui.so|libshim_ui.so:/system/lib/libui.so|libshim_ui2.so
 LINKER_FORCED_SHIM_LIBS += /system/lib/libgui.so|libshim_gui.so
 
 # Partitions
