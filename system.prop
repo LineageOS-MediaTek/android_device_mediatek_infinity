@@ -4,3 +4,9 @@
 
 # LCD density
 ro.sf.lcd_density=160
+
+# Hardware rotation
+ro.sf.hwrotation=180
+
+# Enable on-screen keys (temporary)
+qemu.hw.mainkeys=0
