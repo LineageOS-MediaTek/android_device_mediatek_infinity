@@ -5,8 +5,6 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Release name
-PRODUCT_RELEASE_NAME := infinity
-
 PRODUCT_DEVICE := infinity
 PRODUCT_NAME := lineage_infinity
 PRODUCT_BRAND := MediaTek
@@ -16,6 +14,3 @@ PRODUCT_MANUFACTURER := MediaTek
 # Boot animation
 TARGET_SCREEN_HEIGHT      := 400
 TARGET_SCREEN_WIDTH       := 400
-
-PRODUCT_DEFAULT_LANGUAGE := en
-PRODUCT_DEFAULT_REGION   := US

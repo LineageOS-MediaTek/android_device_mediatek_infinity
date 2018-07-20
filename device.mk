@@ -76,4 +76,3 @@ $(call inherit-product, device/mediatek/mt6737-common/mt6737.mk)
 
 # Vendor
 $(call inherit-product, vendor/mediatek/infinity/infinity-vendor.mk)
-
