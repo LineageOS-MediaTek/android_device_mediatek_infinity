@@ -6,7 +6,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := LD_AUO,lem7
+TARGET_OTA_ASSERT_DEVICE := infinity
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
@@ -75,5 +75,5 @@ $(call inherit-product-if-exists, frameworks/native/build/phone-xhdpi-1024-hwui-
 $(call inherit-product, device/mediatek/mt6737-common/mt6737.mk)
 
 # Vendor
-$(call inherit-product, vendor/lemfo/LD_AUO/LD_AUO-vendor.mk)
+$(call inherit-product, vendor/mediatek/infinity/infinity-vendor.mk)
 

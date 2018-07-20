@@ -1,7 +1,7 @@
-Device Tree for Lemfo Lem7
+Device Tree for MediaTek Infinity (LEMFO LEM7 & Thor 4 LTE)
 ===========================================
 
-Click here to see [Building manual](https://github.com/LineageOS-MediaTek/android_device_lemfo_LD_AUO/tree/cm-14.1/MANUAL.md)
+Click here to see [Building manual](https://github.com/LineageOS-MediaTek/android_device_mediatek_infinity/tree/cm-14.1/MANUAL.md)
 
 Basic   | Spec Sheet
 -------:|:-------------------------
@@ -14,9 +14,3 @@ Storage | 16
 Battery | 580mAh
 Display | 400 x 400 pixels, 1.39 inches
 Camera  | Main 2MP
-
-![LEM7](http://10537319.s21i.faiusr.com/4/ABUIABAEGAAgpJD11gUo_pegnwcw6Ac46Ac.png "LEM7")
-
-
-
-

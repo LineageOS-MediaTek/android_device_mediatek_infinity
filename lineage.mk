@@ -5,13 +5,13 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Release name
-PRODUCT_RELEASE_NAME := LD_AUO
+PRODUCT_RELEASE_NAME := infinity
 
-PRODUCT_DEVICE := LD_AUO
-PRODUCT_NAME := lineage_LD_AUO
-PRODUCT_BRAND := LEMFO
-PRODUCT_MODEL := LD_AUO
-PRODUCT_MANUFACTURER := LD_AUO
+PRODUCT_DEVICE := infinity
+PRODUCT_NAME := lineage_infinity
+PRODUCT_BRAND := MediaTek
+PRODUCT_MODEL := Infinity
+PRODUCT_MANUFACTURER := MediaTek
 
 # Boot animation
 TARGET_SCREEN_HEIGHT      := 400

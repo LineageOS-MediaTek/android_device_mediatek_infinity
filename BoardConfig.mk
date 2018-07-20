@@ -1,5 +1,5 @@
 # mt6737 platform boardconfig
-DEVICE_PATH := device/lemfo/LD_AUO
+DEVICE_PATH := device/mediatek/infinity
 
 # TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
 

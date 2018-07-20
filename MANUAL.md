@@ -41,10 +41,9 @@ repo sync -c -f -q -j8 --force-sync --no-clone-bundle --no-tags --optimized-fetc
 ``` 
 #### Clone necessary trees
 ```
-git clone https://github.com/LineageOS-MediaTek/android_device_motorola_nicklaus -b cm-14.1 device/motorola/nicklaus
+git clone https://github.com/LineageOS-MediaTek/android_device_mediatek_infinity -b cm-14.1 device/mediatek/infinity
 git clone https://github.com/LineageOS-MediaTek/android_device_mediatek_mt6737-common -b cm-14.1 device/mediatek/mt6737-common
-git clone https://github.com/LineageOS-MediaTek/proprietary_vendor_motorola -b cm-14.1 vendor/motorola
-git clone https://github.com/LineageOS-MediaTek/android_kernel_motorola_nicklaus kernel/motorola/nickalaus
+git clone https://github.com/LineageOS-MediaTek/proprietary_vendor_mediatek -b cm-14.1 vendor/mediatek
 ```
 ## Building Source
 
@@ -69,6 +68,6 @@ export ANDROID_JACK_VM_ARGS="-Xmx4096m -Xms512m -Dfile.encoding=UTF-8 -XX:+Tiere
 #### Start building :) 
 ```
 sh build/envsetup.sh 
-breakfast LD_AUO
+breakfast infinity
 make -j8 bacon | tee build.log
 ```
